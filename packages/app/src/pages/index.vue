@@ -17,7 +17,7 @@ function addTag(tag: string) {
 
 <template>
   <div class="p-0" v-if="!search.pending && search.sortedElementsByTags">
-    <div class="min-h-[60vh] flex items-center justify-start px-[8vw]">
+    <div class="min-h-[60vh] flex items-center justify-start px-[12vw]">
       <div class="">
         <h1
           class="text-5xl font-extrabold leading-none bg-gradient-to-l from-green-200 via-green-400 to-green-500 bg-clip-text text-transparent"
@@ -35,7 +35,7 @@ function addTag(tag: string) {
         >
       </div>
     </div>
-    <section class="px-20 pb-20" id="recipes-container">
+    <section class="px-[12vw] pb-20" id="recipes-container">
       <div>
         <h2>Nos recettes populaires</h2>
         <input
