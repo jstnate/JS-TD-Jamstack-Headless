@@ -17,7 +17,7 @@ function addTag(tag: string) {
 
 <template>
   <div class="p-0" v-if="!search.pending && search.sortedElementsByTags">
-    <div class="min-h-[60vh] flex items-center justify-start px-20">
+    <div class="min-h-[60vh] flex items-center justify-start px-[8vw]">
       <div class="">
         <h1
           class="text-5xl font-extrabold leading-none bg-gradient-to-l from-green-200 via-green-400 to-green-500 bg-clip-text text-transparent"
