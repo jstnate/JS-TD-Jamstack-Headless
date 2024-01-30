@@ -1,36 +1,36 @@
 export default ({ env }) => ({
   upload: {
     config: {
-      provider: 'strapi-provider-upload-supabase',
+      provider: "strapi-provider-upload-supabase",
       providerOptions: {
-        apiUrl: env('SUPABASE_API_URL'),
-        apiKey: env('SUPABASE_API_KEY'),
-        bucket: env('SUPABASE_BUCKET'),
-        directory: env('SUPABASE_DIRECTORY'),
-        options: {}
+        apiUrl: env("SUPABASE_API_URL"),
+        apiKey: env("SUPABASE_API_KEY"),
+        bucket: env("SUPABASE_BUCKET"),
+        directory: env("SUPABASE_DIRECTORY"),
+        options: {},
       },
       breakpoints: {
         xlarge: 1920,
-        small: 500
+        small: 500,
       },
-    }
+    },
   },
   transformer: {
     enabled: true,
     config: {
-      prefix: '/api/',
+      prefix: "/api/",
       responseTransforms: {
         removeAttributesKey: true,
-        removeDataKey: true
+        removeDataKey: true,
       },
       contentTypeFilter: {
-        mode: 'allow'
+        mode: "allow",
       },
       plugins: {
         ids: {
-          'slugify': true,
-        }
-      }
-    }
-  }
-})
+          slugify: true,
+        },
+      },
+    },
+  },
+});

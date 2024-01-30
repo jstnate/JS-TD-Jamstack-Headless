@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_recipes_instructions",
+  "info": {
+    "displayName": "Instructions",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    }
+  }
+}

@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   routeRules: {
     '/': { prerender: true },
-    '/recettes/**': { isr: true },
+    '/recipes/**': { isr: true },
   },
   css: ['@unocss/reset/normalize.css', '~/assets/css/main.css'],
   modules: ['@unocss/nuxt', '@nuxt/image', '@nuxtjs/strapi', '@pinia/nuxt'],
